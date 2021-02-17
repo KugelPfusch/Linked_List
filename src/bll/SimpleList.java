@@ -57,7 +57,6 @@ public class SimpleList {
         return worked;
     }
 
-<<<<<<< HEAD
     public boolean removeAt(int position) {
         Node currentNode = this.head;
         int counter = 0;
