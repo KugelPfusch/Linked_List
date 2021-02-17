@@ -26,11 +26,11 @@ public class Main {
         System.out.println("Test von update + toString: erwarteter Wert:7 1 3 6 5 - tatsächlicher Wert " + list.toString());
         list.update(4, 9);
         System.out.println("Test von update + toString: erwarteter Wert:7 1 3 6 9 - tatsächlicher Wert " + list.toString());
-        System.out.println(list.remove(0));
+        System.out.println(list.removeAt(0));
         System.out.println(list.toString());
         System.out.println("Worked: "+list.insertAt(0,10));
         System.out.println(list.toString());
-        System.out.println("Worked: "+list.removeAt(10));
+        System.out.println("Worked: "+list.remove(10));
         System.out.println(list.toString());
         System.out.println("**************Zweite Liste****************");
         SimpleList list1 = new SimpleList();
