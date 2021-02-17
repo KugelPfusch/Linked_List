@@ -1,8 +1,5 @@
 package bll;
-<<<<<<< HEAD
 
-=======
->>>>>>> c7eb3bdd4318a61eb57b679739ddd3ef8821a28f
 class Node {
 
     private int value;
