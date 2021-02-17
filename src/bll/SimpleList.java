@@ -57,7 +57,7 @@ public class SimpleList {
         return worked;
     }
 
-    public boolean remove(int position){
+    public boolean removeAt(int position){
         Node currentNode = this.head;
         int counter = 0;
         boolean worked = false;
@@ -100,7 +100,7 @@ public class SimpleList {
         return worked;
     }
 
-    public boolean removeAt(int value){
+    public boolean remove(int value){
         Node currentNode = this.head;
         boolean worked = false;
 
