@@ -30,11 +30,8 @@ public class Main {
         System.out.println(list.toString());
         System.out.println("Worked: " + list.insertAt(0, 10));
         System.out.println(list.toString());
-<<<<<<< HEAD
         System.out.println("Worked: " + list.remove(10));
-=======
         System.out.println("Worked: "+list.remove(10));
->>>>>>> c7eb3bdd4318a61eb57b679739ddd3ef8821a28f
         System.out.println(list.toString());
         System.out.println("**************Zweite Liste****************");
         SimpleList list1 = new SimpleList();
