@@ -47,7 +47,7 @@ public class SimpleList {
         boolean worked = false;
 
         if (position >= 0 && position < size()) {
-            while ( counter != position ) {
+            while (counter != position) {
                 counter++;
                 currentNode = currentNode.getNext();
             }
@@ -57,42 +57,42 @@ public class SimpleList {
         return worked;
     }
 
-    public boolean remove(int position){
+    public boolean removeAt(int position) {
         Node currentNode = this.head;
         int counter = 0;
         boolean worked = false;
 
-        if(position > 0 && position < size()){
-            while(counter != position - 1){
+        if (position > 0 && position < size()) {
+            while (counter != position - 1) {
                 counter++;
                 currentNode = currentNode.getNext();
             }
             currentNode.setNext(currentNode.getNext().getNext());
             worked = true;
-        } else if(position == 0){
+        } else if (position == 0) {
             this.head = currentNode.getNext();
             worked = true;
         }
         return worked;
     }
 
-    public boolean insertAt(int position, int value){
+    public boolean insertAt(int position, int value) {
         Node currentNode = this.head;
         Node newNode = new Node(value);
         Node helperNode = null;
         int counter = 0;
         boolean worked = false;
 
-        if(position > 0 && position < size()){
-            while(counter != position - 1){
-                counter ++;
+        if (position > 0 && position < size()) {
+            while (counter != position - 1) {
+                counter++;
                 currentNode = currentNode.getNext();
             }
             helperNode = currentNode.getNext();
             currentNode.setNext(newNode);
             newNode.setNext(helperNode);
             worked = true;
-        } else if(position == 0){
+        } else if (position == 0) {
             newNode.setNext(this.head);
             this.head = newNode;
             worked = true;
@@ -100,19 +100,19 @@ public class SimpleList {
         return worked;
     }
 
-    public boolean removeAt(int value){
+    public boolean remove(int value) {
         Node currentNode = this.head;
         boolean worked = false;
 
-        while(!worked && currentNode.getNext() != null){
-            if(currentNode.getNext().getValue() == value){
+        while (!worked && currentNode.getNext() != null) {
+            if (currentNode.getNext().getValue() == value) {
                 currentNode.setNext(currentNode.getNext().getNext());
                 worked = true;
             }
             currentNode = currentNode.getNext();
         }
 
-        if( value == this.head.getValue()){
+        if (value == this.head.getValue()) {
             this.head = this.head.getNext();
             worked = true;
         }
