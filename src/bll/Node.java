@@ -1,6 +1,5 @@
 package bll;
-
-public class Node {
+private class Node {
 
     private int value;
     private Node next;
